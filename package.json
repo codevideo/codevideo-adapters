@@ -1,0 +1,41 @@
+{
+  "name": "codevideo-adapters",
+  "version": "1.0.0",
+  "description": "Adapters for third party services (file system, github, etc.) to connect to the CodeVideo ecosystem.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rimraf dist",
+    "prepare": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codevideo/codevideo-adapters.git"
+  },
+  "keywords": [
+    "CodeVideo.",
+    "TypeScript"
+  ],
+  "author": "Chris Frewin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codevideo/codevideo-adapters/issues"
+  },
+  "homepage": "https://github.com/codevideo/codevideo-adapters#readme",
+  "dependencies": {
+    "@fullstackcraftllc/codevideo-types": "^2.1.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.40.1",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  }
+}
