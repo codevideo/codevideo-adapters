@@ -4,7 +4,7 @@ Adapters for third party services (file system, GitHub, etc.) to connect to the 
 
 ## Usage - File System Adapter
 
-Start your CodeVideo lesson at with any existing codebase, by providing the path to the folder containing your code:
+Start your CodeVideo lesson with the exact same starting point as any existing codebase, by providing the path to the folder containing your code:
 
 ```ts
 import { buildFileStructureFromRootFolder } from "@fullstackcraftllc/codevideo-adapters";
