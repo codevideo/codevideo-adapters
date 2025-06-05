@@ -33,7 +33,7 @@ export const buildFileStructureFromGithub = async (repoUrl: string): Promise<IFi
         
         // Build file structure from the cloned repo
         const repoPath = path.join(tempDir, repoName);
-        const fileStructure = await buildFileStructureFromRootFolder(repoPath);
+        const { fileStructure } = await buildFileStructureFromRootFolder(repoPath);
         return fileStructure;
     } catch (error) {
         throw error;

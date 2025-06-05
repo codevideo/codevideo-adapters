@@ -19,7 +19,7 @@ describe("buildFileStructureFromRootFolder", () => {
             }
         });
 
-        const result = await buildFileStructureFromRootFolder('/project');
+        const {fileStructure: result} = await buildFileStructureFromRootFolder('/project');
 
         expect(result['README.md']).toEqual({
             type: 'file',
@@ -50,7 +50,7 @@ describe("buildFileStructureFromRootFolder", () => {
             }
         });
 
-        const result = await buildFileStructureFromRootFolder('/deep-structure');
+        const {fileStructure: result} = await buildFileStructureFromRootFolder('/deep-structure');
 
         expect(result.level1.type).toBe('directory');
         expect((result.level1 as any).children?.level2.type).toBe('directory');

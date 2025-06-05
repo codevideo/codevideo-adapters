@@ -1,0 +1,21 @@
+{
+  "name": "codevideo-adapter-examples",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Examples of how to use the CodeVideo adapters in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "buildFileStructureFromRootFolderExample": "tsc && node dist/buildFileStructureFromRootFolderExample.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fullstackcraftllc/codevideo-adapters": "^1.0.9",
+    "@fullstackcraftllc/codevideo-types": "^2.1.25",
+    "big-json": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/big-json": "^3.2.5",
+    "typescript": "^5.8.3"
+  }
+}
