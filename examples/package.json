@@ -5,7 +5,8 @@
   "description": "Examples of how to use the CodeVideo adapters in Node.js",
   "main": "index.js",
   "scripts": {
-    "buildFileStructureFromRootFolderExample": "tsc && node dist/buildFileStructureFromRootFolderExample.js"
+    "buildFileStructureFromRootFolderExample": "tsc && node dist/buildFileStructureFromRootFolderExample.js",
+    "buildFileStructureFromRootFolderLessonExample": "tsc && node dist/buildFileStructureFromRootFolderLessonExample.js"
   },
   "author": "",
   "license": "MIT",
