@@ -4,7 +4,9 @@ import dts from 'rollup-plugin-dts';
 const external = [
     "@fullstackcraftllc/codevideo-types",
     "path",
-    "fs/promises"
+    "fs/promises",
+    "os",
+    "child_process",
 ];
 
 export default [

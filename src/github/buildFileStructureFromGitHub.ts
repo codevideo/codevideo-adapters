@@ -5,7 +5,7 @@ import { exec } from "child_process";
 import fs from "fs/promises";
 import { buildFileStructureFromRootFolder } from "../filesystem/buildFileStructureFromRootFolder";
 
-export const buildFileStructureFromGithub = async (repoUrl: string): Promise<IFileStructure> => {
+export const buildFileStructureFromGitHub = async (repoUrl: string): Promise<IFileStructure> => {
     // essentially the same as buildFileStructureFromRootFolder, but first clones the repo to a temp folder
     // and then calls buildFileStructureFromRootFolder
     const tempDir = path.join(os.tmpdir(), 'codevideo', 'github');

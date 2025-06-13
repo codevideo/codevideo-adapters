@@ -1,6 +1,6 @@
 {
   "name": "@fullstackcraftllc/codevideo-adapters",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "description": "Adapters for third party services (file system, github, etc.) to connect to the CodeVideo ecosystem.",
   "type": "module",
   "main": "dist/index.js",

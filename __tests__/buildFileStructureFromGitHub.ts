@@ -1,5 +1,5 @@
 import mock from 'mock-fs';
-import { buildFileStructureFromGithub } from '../src/github/buildFileStructureFromGitHub';
+import { buildFileStructureFromGitHub } from '../src/github/buildFileStructureFromGitHub';
 import * as child_process from 'child_process';
 import path from 'path';
 import os from 'os';
@@ -41,7 +41,7 @@ describe("buildFileStructureFromGitHub", () => {
             return {} as child_process.ChildProcess;
         });
 
-        const result = await buildFileStructureFromGithub('https://github.com/user/test-repo.git');
+        const result = await buildFileStructureFromGitHub('https://github.com/user/test-repo.git');
 
         expect(execMock).toHaveBeenCalled();
         expect(result['package.json'].content).toBe('{"name": "test-repo"}');
@@ -67,7 +67,7 @@ describe("buildFileStructureFromGitHub", () => {
             return {} as child_process.ChildProcess;
         });
 
-        await expect(buildFileStructureFromGithub('https://github.com/invalid/repo.git'))
+        await expect(buildFileStructureFromGitHub('https://github.com/invalid/repo.git'))
             .rejects.toThrow();
     });
 
@@ -95,7 +95,7 @@ describe("buildFileStructureFromGitHub", () => {
             return {} as child_process.ChildProcess;
         });
 
-        await buildFileStructureFromGithub('https://github.com/user/custom-repo');
+        await buildFileStructureFromGitHub('https://github.com/user/custom-repo');
         
         expect(execMock).toHaveBeenCalledWith(
             expect.stringContaining('git clone https://github.com/user/custom-repo'),
