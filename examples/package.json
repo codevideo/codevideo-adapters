@@ -6,12 +6,13 @@
   "main": "index.js",
   "scripts": {
     "buildFileStructureFromRootFolderExample": "tsc && node dist/buildFileStructureFromRootFolderExample.js",
-    "buildFileStructureFromRootFolderLessonExample": "tsc && node dist/buildFileStructureFromRootFolderLessonExample.js"
+    "buildFileStructureFromRootFolderLessonExample": "tsc && node dist/buildFileStructureFromRootFolderLessonExample.js",
+    "buildFileStructureFromGitHubLessonExample": "tsc && node dist/buildFileStructureFromGitHubLessonExample.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@fullstackcraftllc/codevideo-adapters": "^1.0.9",
+    "@fullstackcraftllc/codevideo-adapters": "^1.0.12",
     "@fullstackcraftllc/codevideo-types": "^2.1.25",
     "big-json": "^3.2.0"
   },
